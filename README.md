@@ -19,3 +19,6 @@ Ejecutar `ng build` para generar el build del proyecto. El resultado del build s
 Angular 13.3.3
 Node 16.14.2
 
+## Testing
+
+Los test unitarios no estan configurados
