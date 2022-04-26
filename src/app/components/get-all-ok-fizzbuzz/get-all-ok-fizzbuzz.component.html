@@ -1,0 +1,27 @@
+<div class="container wrapper">
+    <div class="list row">
+        <div class="col-md-12">
+            <div class="tableFixHead">
+                <h3>FizzBuzz Ok Request List</h3>
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Timestamp</th>
+                            <th scope="col">Code</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">List</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let fb of fizzbuzzOk_List">
+                            <td>{{fb.timestamp}}</td>
+                            <td>{{fb.code}}</td>
+                            <td>{{fb.description}}</td>
+                            <td>{{fb.list}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

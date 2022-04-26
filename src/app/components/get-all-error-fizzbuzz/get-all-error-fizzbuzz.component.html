@@ -1,0 +1,31 @@
+<div class="container wrapper">
+    <div class="list row">
+        <div class="col-md-12">
+            <div class="tableFixHead">
+                <h3>FizzBuzz Bad Request List</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Timestamp</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Error</th>
+                            <th scope="col">Exception</th>
+                            <th scope="col">Message</th>
+                            <th scope="col">Path</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let fb of fizzbuzzError_List">
+                            <td>{{fb.timestamp}}</td>
+                            <td>{{fb.status}}</td>
+                            <td>{{fb.error}}</td>
+                            <td>{{fb.exception}}</td>
+                            <td>{{fb.message}}</td>
+                            <td>{{fb.path}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

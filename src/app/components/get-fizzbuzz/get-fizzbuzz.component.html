@@ -1,0 +1,34 @@
+<div class="center">
+    <div class="border-customized-input">
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <input type="text" placeholder="Min" formControlName="min" class="form-control" [(ngModel)]="min"
+                    [ngClass]="{ 'is-invalid': submitted && f['min'].errors }" />
+                <div *ngIf="submitted && f['min'].errors" class="invalid-feedback">
+                    <div *ngIf="f['min'].errors['required']">Min is required</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Max" formControlName="max" class="form-control" [(ngModel)]="max"
+                    [ngClass]="{ 'is-invalid': submitted && f['max'].errors }" />
+                <div *ngIf="submitted && f['max'].errors" class="invalid-feedback">
+                    <div *ngIf="f['max'].errors['required']">Max is required</div>
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-primary">Run FizzBuzz!!</button>
+                <button type="button" (click)="onReset()" class="btn btn-warning float-right">
+                    Reset
+                </button>
+            </div>
+
+        </form>
+
+        <div>
+            <textarea [(ngModel)]="response"></textarea>
+        </div>
+    </div>
+</div>

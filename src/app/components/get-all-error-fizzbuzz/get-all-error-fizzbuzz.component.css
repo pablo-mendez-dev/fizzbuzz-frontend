@@ -1,0 +1,20 @@
+td {
+    max-width: 20px;
+    overflow-wrap: break-word;
+    color: #313132;
+}
+
+th {
+    background: rgb(242, 162, 23);
+    color: #fff;
+}
+
+.tableFixHead {
+    height: 100px;
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}

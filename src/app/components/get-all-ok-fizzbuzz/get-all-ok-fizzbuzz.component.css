@@ -1,0 +1,24 @@
+td {
+    max-width: 20px;
+    overflow-wrap: break-word;
+    color: #313132;
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+table.table-bordered {
+    border: 1px solid rgb(5, 5, 5);
+    margin-top: 20px;
+}
+
+table.table-bordered>thead>tr>th {
+    border: 1px solid rgb(5, 5, 5);
+}
+
+table.table-bordered>tbody>tr>td {
+    border: 1px solid rgb(5, 5, 5);
+}
