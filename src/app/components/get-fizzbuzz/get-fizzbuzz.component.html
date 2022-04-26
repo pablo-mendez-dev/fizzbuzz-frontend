@@ -3,7 +3,7 @@
 
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div class="form-group">
-                <input type="text" placeholder="Min" formControlName="min" class="form-control" [(ngModel)]="min"
+                <input type="text" placeholder="set Min number" formControlName="min" class="form-control" [(ngModel)]="min"
                     [ngClass]="{ 'is-invalid': submitted && f['min'].errors }" />
                 <div *ngIf="submitted && f['min'].errors" class="invalid-feedback">
                     <div *ngIf="f['min'].errors['required']">Min is required</div>
@@ -11,7 +11,7 @@
             </div>
 
             <div class="form-group">
-                <input type="text" placeholder="Max" formControlName="max" class="form-control" [(ngModel)]="max"
+                <input type="text" placeholder="set Max number" formControlName="max" class="form-control" [(ngModel)]="max"
                     [ngClass]="{ 'is-invalid': submitted && f['max'].errors }" />
                 <div *ngIf="submitted && f['max'].errors" class="invalid-feedback">
                     <div *ngIf="f['max'].errors['required']">Max is required</div>
