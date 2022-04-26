@@ -6,6 +6,10 @@ Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) vers
 
 Ejecutar `ng serve` para desplegar el servidor en modo develop. La aplicacion se ejcuta en `http://localhost:4200/`. 
 
+## Configuracion de entorno
+
+La ubicacion del endpoint se configura en el archivo /src/environments/environment.ts
+
 ## Build
 
 Ejecutar `ng build` para generar el build del proyecto. El resultado del build se encuentra en `dist/` directory.
@@ -14,3 +18,4 @@ Ejecutar `ng build` para generar el build del proyecto. El resultado del build s
 
 Angular 13.3.3
 Node 16.14.2
+
