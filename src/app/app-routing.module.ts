@@ -5,12 +5,14 @@ import { GetAllOkFizzbuzzComponent } from './components/get-all-ok-fizzbuzz/get-
 import { GetAllErrorFizzbuzzComponent } from './components/get-all-error-fizzbuzz/get-all-error-fizzbuzz.component';
 import { HomeComponent } from './components/home/home.component';
 
+/** En esta clase se definen las rutas de la aplicacion */
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'get-fizzbuzz', component: GetFizzbuzzComponent },
   { path: 'get-all-ok', component: GetAllOkFizzbuzzComponent },
   { path: 'get-all-error', component: GetAllErrorFizzbuzzComponent }
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
