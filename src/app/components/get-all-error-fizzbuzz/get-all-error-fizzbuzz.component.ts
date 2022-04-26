@@ -18,6 +18,7 @@ export class GetAllErrorFizzbuzzComponent implements OnInit {
     this.getAllFizzBuzzErrorList();
   }
 
+  /** Metodo que obtiene desde el servicio la lista de todas las solicitudes con request incorrectos */
   getAllFizzBuzzErrorList(): void {
     this.service.getAllFizzBuzzError()
       .subscribe({

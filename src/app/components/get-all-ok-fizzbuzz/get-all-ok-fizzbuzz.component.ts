@@ -18,6 +18,7 @@ export class GetAllOkFizzbuzzComponent implements OnInit {
     this.getAllFizzBuzzOkList();
   }
 
+  /** Metodo que obtiene desde el servicio la lista de todas las solicitudes con request correctos */
   getAllFizzBuzzOkList(): void {
     this.service.getAllFizzBuzzOk()
       .subscribe({

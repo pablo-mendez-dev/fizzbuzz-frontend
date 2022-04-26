@@ -10,6 +10,8 @@ const baseUrl = environment.API_URL;
 @Injectable({
   providedIn: 'root'
 })
+
+/** Clase que expone metodos que se encargan de invocar los servicios del API REST FizzBuzz */
 export class FizzbuzzServicesService {
 
   constructor(private http: HttpClient) { }

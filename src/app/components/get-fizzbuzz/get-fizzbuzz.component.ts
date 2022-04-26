@@ -14,6 +14,7 @@ export class GetFizzbuzzComponent implements OnInit {
   min = '';
   max = '';
 
+  /** El FormGroup permiteagrupar variables que se van a solicitar desde un formulario con validaciones de datos */
   form: FormGroup = new FormGroup({
     min: new FormControl(''),
     max: new FormControl(''),
@@ -25,7 +26,7 @@ export class GetFizzbuzzComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.formBuilder.group(
-      {
+      {/** Validaciones de las variables, en este caso son requeridas las dos */
         min: ['', Validators.required],
         max: ['', Validators.required],
       }
@@ -50,6 +51,7 @@ export class GetFizzbuzzComponent implements OnInit {
     return this.form.controls;
   }
 
+  /** Metodo que obtiene invoca al servicio que ejecuta  el algoritmo fizzbuzz */
   getFizzBuzz(): void {
     this.service.getFizzBuzz(this.min, this.max).subscribe({
       next: (data) => {
