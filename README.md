@@ -4,7 +4,7 @@ Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) vers
 
 ## Development server
 
-Ejecutar `ng serve` para desplegar el servidor en modo develop. La aplicacion se ejcuta en `http://localhost:4200/`. 
+Ejecutar `ng serve` para desplegar el servidor en modo develop. La aplicacion se ejecuta en `http://localhost:4200/`. 
 
 ## Configuracion de entorno
 
