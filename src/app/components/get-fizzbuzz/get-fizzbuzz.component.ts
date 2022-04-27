@@ -55,11 +55,11 @@ export class GetFizzbuzzComponent implements OnInit {
   getFizzBuzz(): void {
     this.service.getFizzBuzz(this.min, this.max).subscribe({
       next: (data) => {
-        this.response = JSON.stringify(data);
+        this.response = JSON.stringify(data, null, 2);
         console.log(this.response);
       },
       error: (e) => {
-        this.response = JSON.stringify(e.error);
+        this.response = JSON.stringify(e.error, null, 2);
         console.log(this.response);
       },
     });
